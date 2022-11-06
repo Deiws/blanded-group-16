@@ -1,1 +1,1 @@
-# blanded-group-16
+# blended-group-16
