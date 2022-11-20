@@ -6,7 +6,7 @@
   --main-font-family: "Montserrat", sans-serif;
   --secondary-font-family: "Roboto", sans-serif;
   --bgd-color: #f1f1f2;
-  --bgd-card: #FAFAFA;
+  --bgd-card: #fafafa;
 }
 
 body {
@@ -200,7 +200,7 @@ p {
   font-weight: 400;
   color: var(--main-text-color);
   font-size: 32px;
-line-height: 1.18;
+  line-height: 1.18;
 }
 .gifts-text {
   color: var(--main-text-color);
@@ -208,28 +208,83 @@ line-height: 1.18;
   line-height: 1.36;
   margin-bottom: 57px;
 }
-.gifts-cards-list{
+.gifts-cards-list {
   display: flex;
   gap: 30px;
 }
 
 .cards-title {
   font-size: 20px;
-line-height: 1.2;
-font-weight: 400;
-color: var(--main-text-color);
-margin-bottom: 74px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--main-text-color);
+  margin-bottom: 74px;
 }
 
 .card-link {
   font-weight: 600;
   font-size: 14px;
-line-height: 1.4;
-color: var(--main-text-color);
+  line-height: 1.4;
+  color: var(--main-text-color);
 }
 
 .card-wrapper {
   padding: 24px;
   background-color: var(--bgd-card);
   text-align: left;
+}
+
+/* section orange */
+
+.orange {
+  background-color: var(--accent-color);
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.orange .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.orange-title {
+  font-size: 32px;
+  line-height: 1.41;
+  margin-bottom: 25px;
+}
+.orange-text {
+  font-size: 32px;
+  line-height: 1.41;
+}
+.button-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.button {
+  min-width: 200px;
+  min-height: 50px;
+  background-color: var(--additional-color);
+  border-radius: 5px;
+  padding: 18px 25px;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  border: 1px solid var(--main-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button.find {
+  color: var(--secondary-color);
+}
+.button.how-works {
+  color: var(--main-text-color);
+  background-color: transparent;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
